@@ -1,0 +1,374 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="og:title" content="【準備室】">
+<meta property="og:description" content="">
+<title>【準備室】</title>
+<style>
+h1{ color:white; margin: 5px 0; }
+body{ background:#454752; }
+._subtitle { color:#ddd; margin:5px 0 20px 0; }
+._sectTitle { background:#ddd; margin-top:30px; padding:10px;font-weight:bold;font-size:1.3rem;text-align:center; }
+._hidden { display:none; }
+.center { display:flex; flex-direction:column; align-items:center; }
+#_main { display:flex; flex-direction:column; align-items:end; }
+._script {width: 100%;}
+
+
+._halt { padding:30px 0; }
+._bgImg { text-align: center; }
+._bgImg img { max-width: 800px; }
+._talk { margin:5px 0; display:flex; border:1px solid black; background:#1e1e1e; color:#eee; width:100%; max-width:1080px; border-radius:5px; }
+._leftCol { width:122px; }
+._rightCol { width:calc(100% - 126px); }
+._actorName{ padding:5px 10px; height:20px; font-size:18px; }
+._actorImg { margin:6px; width:110px; height:110px; background-repeat:no-repeat; background-size:cover; background-color:#2a2a2a; }
+._actorWords { margin:5px; background:#2a2a2a; font-size:1.1rem; padding:10px; height:calc(100% - 60px); border-radius:5px; }
+._sectTitle { border-radius:5px; margin-bottom:5px; }
+
+@media only screen and (max-width: 400px) {
+._leftCol { width:100px; }
+._rightCol { width:calc(100% - 100px); }
+._actorImg { margin:35px 0 5px 10px; width: 85px; height: 85px; }
+}
+
+._talk.otherCh { width:calc(50%); text-align:right; margin-left:auto; }
+._talk.otherCh ._leftCol { display:none; }
+._talk.otherCh ._rightCol { width:100%; }
+._talk.otherCh ._actorWords { background:black;color:white; }
+
+._actor_0 ._actorName { color: #888888; }
+._actor_0 ._actorName::after { content:"KP"; }
+._actor_0 ._actorImg { background-image:url(https://images.plurk.com/3ZZx0oa12lNSjNDb6djmW9.png); } 
+._actor_1 ._actorName { color: #888888; }
+._actor_1 ._actorName::after { content:"路維希爾德．帕比斯"; }
+._actor_1 ._actorImg { background-image:url(https://images.plurk.com/6AzHNWf6XNz9k4BJ5ytswH.png); } 
+._actor_2 ._actorName { color: #888888; }
+._actor_2 ._actorName::after { content:"3"; }
+._actor_2 ._actorImg { background-image:url(); } 
+._actor_3 ._actorName { color: #888888; }
+._actor_3 ._actorName::after { content:"弗里德里希．馮．法爾肯海因"; }
+._actor_3 ._actorImg { background-image:url(https://images.plurk.com/52kzBePd0rADmpsdMIdRsK.png); } 
+._actor_4 ._actorName { color: #888888; }
+._actor_4 ._actorName::after { content:"弗里德里希．馮．法爾肯海因"; }
+._actor_4 ._actorImg { background-image:url(https://images.plurk.com/41y7tesleWWLdNEYWBOnBy.png); } 
+._actor_5 ._actorName { color: #888888; }
+._actor_5 ._actorName::after { content:"艾吉爾．克拉克"; }
+._actor_5 ._actorImg { background-image:url(https://images.plurk.com/57jS0Zw9sdK3RXjV2q4XOf.jpg); } 
+._actor_6 ._actorName { color: #888888; }
+._actor_6 ._actorName::after { content:"艾吉爾．克拉克"; }
+._actor_6 ._actorImg { background-image:url(https://images.plurk.com/2nX1Yxf43UpM0cRqK11Lcc.jpg); } 
+._actor_7 ._actorName { color: #888888; }
+._actor_7 ._actorName::after { content:"菲卓．安德拉．泰克諾兹"; }
+._actor_7 ._actorImg { background-image:url(https://images.plurk.com/4iQkThvCeakGFboPidGIhC.png); } 
+._actor_8 ._actorName { color: #888888; }
+._actor_8 ._actorName::after { content:"菲卓．安德拉．泰克諾兹"; }
+._actor_8 ._actorImg { background-image:url(https://images.plurk.com/21Wqh3Rfe8DsFJFdPVwxh4.png); } 
+._actor_9 ._actorName { color: #888888; }
+._actor_9 ._actorName::after { content:"10"; }
+._actor_9 ._actorImg { background-image:url(); } 
+._actor_10 ._actorName { color: #888888; }
+._actor_10 ._actorName::after { content:"11"; }
+._actor_10 ._actorImg { background-image:url(); } 
+._actor_11 ._actorName { color: #888888; }
+._actor_11 ._actorName::after { content:"12"; }
+._actor_11 ._actorImg { background-image:url(); } 
+._actor_12 ._actorName { color: #888888; }
+._actor_12 ._actorName::after { content:"13"; }
+._actor_12 ._actorImg { background-image:url(); } 
+._actor_13 ._actorName { color: #888888; }
+._actor_13 ._actorName::after { content:"14"; }
+._actor_13 ._actorImg { background-image:url(); } 
+._actor_14 ._actorName { color: #888888; }
+._actor_14 ._actorName::after { content:"15"; }
+._actor_14 ._actorImg { background-image:url(); } 
+._actor_15 ._actorName { color: #888888; }
+._actor_15 ._actorName::after { content:"16"; }
+._actor_15 ._actorImg { background-image:url(); } 
+._actor_16 ._actorName { color: #888888; }
+._actor_16 ._actorName::after { content:"17"; }
+._actor_16 ._actorImg { background-image:url(); } 
+._actor_17 ._actorName { color: #888888; }
+._actor_17 ._actorName::after { content:"18"; }
+._actor_17 ._actorImg { background-image:url(); } 
+._actor_18 ._actorName { color: #888888; }
+._actor_18 ._actorName::after { content:"19"; }
+._actor_18 ._actorImg { background-image:url(); } 
+._actor_19 ._actorName { color: #888888; }
+._actor_19 ._actorName::after { content:"20"; }
+._actor_19 ._actorImg { background-image:url(); } 
+</style>
+</head>
+<body class="center">
+<div class="_hidden">
+<version>hazmole_v1.0</version>
+</div>
+
+<h1>【準備室】</h1>
+<div class="_subtitle"></div>
+
+<div id="_main"><div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">設有沙發和可移動的會議桌。<br>上面放著獻花用的花束、各種指示牌、折疊椅、獎狀、勳章等各種物品。<br>看來是今天準備工作的房間。<br>能看到裡面精心保管著你們的軍裝。<br><br>【可以探索的地方】<br>〇軍服 〇獻花用的花束 〇各種指示牌 〇獎狀、勳章</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_6">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「我甚至覺得普通的熱兵器控怕拿那東西沒轍」沒打算下來自己走的傢伙如是說</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">下意識走向自己的乾淨衣服</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">是你們在被國際聯盟逮捕之前穿的衣服。<br>從軍帽到軍靴一應俱全，但胸前的勳章和武器等，無論怎麼找也找不到。<br><br>路維看出來，這意圖顯而易見，你們並不是作為罪犯被宣判死刑，而是作為“國家”和“戰爭”的象徵被處死。<br>可以說是一種“展示”。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_8">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「嗯？」趕緊上前檢查一下自己的衣物。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「還準備真周全。」但倒是方便了自己，比起囚服，軍服更方便自己行動。<br><br>他將克拉克放到了他自己的服裝前，再到一旁換上衣物。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_7">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">總之先換上自己的衣服吧，他討厭這身沒品味的東西。 </div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_5">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「衣服穿甚麼都沒差吧」雖然這麼說但他還是讀懂了你的意思換上自己原本的衣服</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「哈哈，果然是作秀吶」他思考了一下，還是換上了自己的衣服，不過省略了一些披肩之類的配飾方便行動
+隨後去查看指示牌</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">“距國際聯盟總部30分鐘”、“道路擁擠，請單向通行”、“此處開始為軍事基地，禁止非相關人員進入”<br>諸如此類的手持指示牌層層疊疊，並排放在地上。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_5">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「話說還有勳章啊?我以前很喜歡這些東西的說」他湊過去看那些獎狀和勳章</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他翻看這些指示牌，摸看看材質</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">擺放著各種項鍊、大綬帶和星章。<br>獎狀上的大部分名字，都是那些強烈反對著你們的國家和人。<br>（項鍊→項鍊形勳章，大綬帶→從肩膀斜掛的寬飾帶，星章→星形勳章。）</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">都是耐用的材質，看起來到時候你們被處死時會有很多觀眾。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他滿意的挑了個堅固一點的打算當武器勉強一用</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「這些東西根本沒用，武器呢？」他拿起一塊勳章充當臨時的武器。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_5">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「恩~好消息沒看到熟人的名字」他笑著說</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_7">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「這種東西一點屁用都沒有，還不如實驗成果實際呢。」他挽手過去一起看，默默記下這群賤人的名字 
+</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">轉頭去看花束</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">準備了白色康乃馨、白玫瑰、白非洲菊、白百合、白蕾絲花……<br>以白色為基調的各種各樣的花朵綻放出艷麗的花瓣。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">拿起一旁的大綬帶，套在克拉克脖子上做了一個簡易的項圈。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">翻來翻去查看，見沒什麼用途就放下了，打算直奔隔壁管理室</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_7">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他去挑了一個長得最順眼的標語帶走。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_5">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「幹嘛?我是很喜歡這些東西沒錯啦!但沒必要吧?」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">深知對方根本不想自己走，他惡劣地扯了扯綬帶，拉著人一起走向管理室。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_7">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他走到花束前，像挑菜一般審視著這些花，然後挑了一朵白百合戴在自己耳朵上，才滿意地跟大家離去。 </div>
+</div>
+</div></div><!--EOS--></div>
+</body>
+</html>

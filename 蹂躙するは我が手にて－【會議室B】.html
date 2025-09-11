@@ -1,0 +1,726 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="og:title" content="【會議室B】">
+<meta property="og:description" content="">
+<title>【會議室B】</title>
+<style>
+h1{ color:white; margin: 5px 0; }
+body{ background:#454752; }
+._subtitle { color:#ddd; margin:5px 0 20px 0; }
+._sectTitle { background:#ddd; margin-top:30px; padding:10px;font-weight:bold;font-size:1.3rem;text-align:center; }
+._hidden { display:none; }
+.center { display:flex; flex-direction:column; align-items:center; }
+#_main { display:flex; flex-direction:column; align-items:end; }
+._script {width: 100%;}
+
+
+._halt { padding:30px 0; }
+._bgImg { text-align: center; }
+._bgImg img { max-width: 800px; }
+._talk { margin:5px 0; display:flex; border:1px solid black; background:#1e1e1e; color:#eee; width:100%; max-width:1080px; border-radius:5px; }
+._leftCol { width:122px; }
+._rightCol { width:calc(100% - 126px); }
+._actorName{ padding:5px 10px; height:20px; font-size:18px; }
+._actorImg { margin:6px; width:110px; height:110px; background-repeat:no-repeat; background-size:cover; background-color:#2a2a2a; }
+._actorWords { margin:5px; background:#2a2a2a; font-size:1.1rem; padding:10px; height:calc(100% - 60px); border-radius:5px; }
+._sectTitle { border-radius:5px; margin-bottom:5px; }
+
+@media only screen and (max-width: 400px) {
+._leftCol { width:100px; }
+._rightCol { width:calc(100% - 100px); }
+._actorImg { margin:35px 0 5px 10px; width: 85px; height: 85px; }
+}
+
+._talk.otherCh { width:calc(50%); text-align:right; margin-left:auto; }
+._talk.otherCh ._leftCol { display:none; }
+._talk.otherCh ._rightCol { width:100%; }
+._talk.otherCh ._actorWords { background:black;color:white; }
+
+._actor_0 ._actorName { color: #888888; }
+._actor_0 ._actorName::after { content:"KP"; }
+._actor_0 ._actorImg { background-image:url(https://images.plurk.com/3ZZx0oa12lNSjNDb6djmW9.png); } 
+._actor_1 ._actorName { color: #888888; }
+._actor_1 ._actorName::after { content:"路維希爾德．帕比斯"; }
+._actor_1 ._actorImg { background-image:url(https://images.plurk.com/6AzHNWf6XNz9k4BJ5ytswH.png); } 
+._actor_2 ._actorName { color: #888888; }
+._actor_2 ._actorName::after { content:"弗里德里希．馮．法爾肯海因"; }
+._actor_2 ._actorImg { background-image:url(https://images.plurk.com/52kzBePd0rADmpsdMIdRsK.png); } 
+._actor_3 ._actorName { color: #888888; }
+._actor_3 ._actorName::after { content:"艾吉爾．克拉克"; }
+._actor_3 ._actorImg { background-image:url(https://images.plurk.com/57jS0Zw9sdK3RXjV2q4XOf.jpg); } 
+._actor_4 ._actorName { color: #888888; }
+._actor_4 ._actorName::after { content:"菲卓．安德拉．泰克諾兹"; }
+._actor_4 ._actorImg { background-image:url(https://images.plurk.com/4iQkThvCeakGFboPidGIhC.png); } 
+._actor_5 ._actorName { color: #888888; }
+._actor_5 ._actorName::after { content:""; }
+._actor_5 ._actorImg { background-image:url(); } 
+._actor_6 ._actorName { color: #888888; }
+._actor_6 ._actorName::after { content:"弗里德里希．馮．法爾肯海因"; }
+._actor_6 ._actorImg { background-image:url(https://images.plurk.com/41y7tesleWWLdNEYWBOnBy.png); } 
+._actor_7 ._actorName { color: #888888; }
+._actor_7 ._actorName::after { content:"艾吉爾．克拉克"; }
+._actor_7 ._actorImg { background-image:url(https://images.plurk.com/2nX1Yxf43UpM0cRqK11Lcc.jpg); } 
+._actor_8 ._actorName { color: #888888; }
+._actor_8 ._actorName::after { content:"菲卓．安德拉．泰克諾兹"; }
+._actor_8 ._actorImg { background-image:url(https://images.plurk.com/21Wqh3Rfe8DsFJFdPVwxh4.png); } 
+._actor_9 ._actorName { color: #888888; }
+._actor_9 ._actorName::after { content:"10"; }
+._actor_9 ._actorImg { background-image:url(); } 
+._actor_10 ._actorName { color: #888888; }
+._actor_10 ._actorName::after { content:"11"; }
+._actor_10 ._actorImg { background-image:url(); } 
+._actor_11 ._actorName { color: #888888; }
+._actor_11 ._actorName::after { content:"12"; }
+._actor_11 ._actorImg { background-image:url(); } 
+._actor_12 ._actorName { color: #888888; }
+._actor_12 ._actorName::after { content:"13"; }
+._actor_12 ._actorImg { background-image:url(); } 
+._actor_13 ._actorName { color: #888888; }
+._actor_13 ._actorName::after { content:"14"; }
+._actor_13 ._actorImg { background-image:url(); } 
+._actor_14 ._actorName { color: #888888; }
+._actor_14 ._actorName::after { content:"15"; }
+._actor_14 ._actorImg { background-image:url(); } 
+._actor_15 ._actorName { color: #888888; }
+._actor_15 ._actorName::after { content:"16"; }
+._actor_15 ._actorImg { background-image:url(); } 
+._actor_16 ._actorName { color: #888888; }
+._actor_16 ._actorName::after { content:"17"; }
+._actor_16 ._actorImg { background-image:url(); } 
+._actor_17 ._actorName { color: #888888; }
+._actor_17 ._actorName::after { content:"18"; }
+._actor_17 ._actorImg { background-image:url(); } 
+._actor_18 ._actorName { color: #888888; }
+._actor_18 ._actorName::after { content:"19"; }
+._actor_18 ._actorImg { background-image:url(); } 
+._actor_19 ._actorName { color: #888888; }
+._actor_19 ._actorName::after { content:"20"; }
+._actor_19 ._actorImg { background-image:url(); } 
+</style>
+</head>
+<body class="center">
+<div class="_hidden">
+<version>hazmole_v1.0</version>
+</div>
+
+<h1>【會議室B】</h1>
+<div class="_subtitle"></div>
+
+<div id="_main"><div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">性奴主僕打開門，一股煙味撲鼻而來。<br>裡面很小，大概有5把椅子。<br>圓柱形的桌子上放著很多資料。<br><br>【可以探索的地方】<br>〇資料 〇會議室整體</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_2">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">聞到刺鼻的煙味，他下意識用衣袖遮住口鼻，環顧著整個會議室。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">〈靈感〉</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「煙味?」他跟你一起摀住口鼻打量起這裡</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">你們都沒感覺到什麼</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">我試圖走過去把資料拿起來看</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">數量龐大的資料。<br>每張資料上都寫著“神明”、“教團”等字眼，還有奇怪的咒文和魔法陣，甚至是從未見過的怪物的照片。<br><br>《朗基努斯之槍行動》<br>2XXX/XX/XX 國際聯盟秘書長 特里克夫· 埃爾根<br><br>這次行動的目的是退散“銀色暮光教團”企圖復活的“克蘇魯”。<br>直至現在，國際聯盟計劃並執行了許多次行動。<br>儘管試圖阻止教團復活“克蘇魯”，但得出的結論是：復活是無法避免的。<br>本次行動將成為對象復活時的對抗策略。<br><br>行動前階段<br>１、　　請求仍在運作的“電視台”、“電台”及“網上服務”提供協助<br>　(1)　佔據電視、終端機及無線電etc<br>２、　在神明的行進路線上，設置“祭壇”<br>　(1)　根據被捕的“銀色暮光教團”魔術師的證詞，作成了疑似祭壇的“黑之門”<br>　(2)　根據預測登陸地點，開展到可執行作戰的階段<br>３、　在國際聯盟軍的所有武器上安裝“新型武器”<br>　(1)　以謀求攻擊力的大幅提升<br><br>第一次攻擊<br>１、　　將顯現的神明引導至“祭壇”<br>　(1)　以陸軍、海軍、空軍及海兵隊為對象進行綜合作戰<br>　(2)　最高指揮官為綜合參謀局· 參謀總長<br><br>第二次攻擊<br>１、　　實施“退散咒文”的詠唱<br>　(1)　在國際聯盟體育場的舞台上，向全世界發表演說<br>　(2)　最大限度地增加詠唱咒文的參與者<br><br>行動日期為“2XXX/XX/XX”。<br><br>————————<br>——————<br>——— （下面有數十頁）<br>……………………<br><br><br>你閱讀了這些不真實的怪異文章〈SANC 1/1d3〉<br><br>作戰執行日上好像寫著明天的日期。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_2">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「什麼東西燒起來了吧。」他跟著上前查看資料。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">調查桌上資訊：<br>每一個PL可以選擇<br>〈圖書館＋考古學＋博物學＋歷史〉四項可丟<br>或是<br>〈人類學＋天文學＋神秘學〉三項可丟<br>其中一組進行判定來找資訊</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">走進房間，環顧四周</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">緊隨其後。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">〈靈感〉</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">你一進來就感到奇怪，你對房間的大小感到違和。
+這裡似乎比地圖上要狹窄得多。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">也不知道是不是長太高，總感覺這裏有點窄，他有點不舒服地縮了縮身體。<br>他走到大家身後利用身高優勢看看大家都在拜讀的文件。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">1d5</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">1d5：5[5] = 5</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他看了看那些資料，皺眉<br>「邪教？」真的不是自己家嗎</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_2">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「外面的人腦袋壞了？」他看著文件上所寫的神明，看向了走進來的路維希爾德。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">你找到一份資料：<br><br>《不完全的“克蘇魯退散”咒文》<br>“hungurui mu■■■■ kutouruhu ruruie uga=■■■ hutagun”<br>能夠退散神明的咒文。<br>銀色暮光教團似乎已經從世界各地處理掉了退散神明的咒文，找到的文獻大約有三篇。<br>都很古老，保存得不完好，因此無法完全複製。<br><br>已經進行三次實驗。<br>在第三次實驗中，50名受試者按照程序詠唱咒文，其中15人暈厥。<br>剩下的25人也出現了暈眩、飢餓、頭痛等症狀。<br>根據文獻和實驗，國際聯盟確定了它的可信度，並決定將它作為“朗基努斯之槍行動”的主軸。<br><br>根據各語言學家的研究，這是一種對任何語言來說都很陌生的未知形式語言。<br><br>讀者自動獲得【咒文：不完全的克蘇魯退散術】。<br>SAN-1d3<br>&lt;克蘇魯神話&gt;+1%</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「這也太……我們都沒玩那麼大」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">確實不是你家呢，似乎這個邪教叫做什麼＂銀色暮光教團＂。 </div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「弗里你找到甚麼?」他靠在你身上打算一起看 </div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">1d4</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">1d4：2[2] = 2</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">你找到一份資料。<br><br>《銀色暮光教團》<br>宗教團體。據說成立於1600年左右的英國。<br>活動據點遍布世界各地。<br>雖然掩護下暗中活動著、紮根於當地的各種的社區，但是在這次大戰中活動範圍大幅擴大了。<br>信徒數量顯著增加，目前估計超過1000萬人。<br>活動目的是“復活教團定義的'統治遠古'的'神明'”。<br>雖然信仰的神明似乎有很多，但是這次被提到的是稱為“克蘇魯”的神明。<br>根據“群星歸位之時邪神甦醒，世界滅亡”的預言，各地正在進行準備工作。 2XXX/XX/XX同時發生的多起恐怖事件、2XXX/XX的集體殺害等相關事件現已明確。<br><br>為應對這種情況，國際聯盟向各地派遣了軍隊。<br>目前已經控制了13個據點，但只是觸及表皮，成果並不理想。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_2">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「奇怪的咒語，看了腦袋會壞掉。」說著他將找到的資料遞給了克拉克。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">1d4 X2</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">1d4： 4[4] = 4</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「這破組織在這麼短時間內做了多東西？」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">你找到一份資料。<br><br>《拉萊耶》<br>被認為是偉大神明居住的城市的名字。<br>傳說中沉沒在太平洋海底的，黑暗死亡之城。<br><br>派遣潛艇繼續進行調查，但仍然沒有線索。<br>2XXX/XX/XX，一艘潛艇中斷了的聯繫，一個月後在南冰洋被發現。<br>所有水手都處於恐慌狀態，專家診斷為集體幻覺。<br><br>”拉萊耶”被認為是指某種現象。<br>除了神明的召喚，地震和噴火等自然災害也應當採取對策。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「腦袋會壞掉你還讓我看?」他笑著接過資料開始看</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">1d2</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">1d2：
+2[2] = 2</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">一邊罵罵咧咧，你又找到一份相關的資訊。<br><br>《克蘇魯》<br>“銀色暮光教團”信仰的神，據說沉睡在被稱為“拉萊耶”的地方。<br>身體形狀被認為是不固定的綠色凝膠狀，有四肢、翅膀、觸手等，大體上可以稱之為怪物。<br>據說，當克蘇魯出現在地上之時，將帶領世界走向荒蕪。<br><br>似乎被編入了某個神話之中。生產、殺死了眾多神明，還有兄弟神。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他將資料擺在桌上，思考著「這是世界末日啊」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">看了兩眼，他不是很在乎這些東西，隨手放在桌上提供給大家。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_2">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「好像出去也沒有什麼活路？」他嘆了口氣，靠在會議桌上。<br><br>「帕比斯呢？這算是你的專業領域吧，跟神明溝通之類的。」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「……種類錯了」他頭痛的說著</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">撐著頭看著大家「怎麼樣？大家有什麼打算？」看起來一點都不在乎。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「和我沒什麼關係吧，他們還要處死我們呢」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「先姑且吸收一下這東西晚點看看能不能用上」他伸手向菲卓討要你找到的東西</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_2">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「拯救世界我沒有興趣，看到國際聯盟的慘狀倒是不錯。」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他把放桌上的文件拿到克拉克手上。<br>聽到處死這件事，他就顯得更煩躁了，他抓了抓頭髮「那又怎樣，人不都死光了嗎？」連死都要搶著他們前面，真讓人不爽，倒是先行刑再去死啊。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「估計有他們求我們的時候」<br>他看了眼資料確保都背下來後轉身就往外走打算繼續往上</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「我覺得嘛.....我想他們是想利用處死我們的噱頭，找一堆人來一起使用那個奇怪的退散咒文」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_2">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「總之先離開吧。」說著他拿起文件塞進克拉克懷裡，拉著人離開了會議室。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他在這個房間查看一圈，重點查看牆壁</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">光看似乎沒什麼問題呢。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">沿著牆壁逐步敲擊</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">路維一邊敲牆壁，一邊走，在你不小心用手指觸摸牆壁時。<br><br>“路維希爾德．帕比斯已認證”<br><br>這樣的的電子音響起，同時，你眼前的牆壁開始滑動。<br>裡面是一部可以容納四個人的狹窄電梯。<br>裡面看起來沒有電梯面版也沒有按鍵，似乎是已經設定好了的自動電梯的樣子。 <br></div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">嚇了一跳，往後退兩步</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_2">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「你的房間？」他懷疑地看向路維希爾德。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「就說他跟邪教有勾結」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">從外面聽到聲音也走過來。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「不知道，我沒印象幹過這事」遲疑，率先走進去</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">路維一個人走進去，並沒有反應。 
+</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">似乎能在這裏離開，進去搭電梯吧。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_2">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「看起來像陷阱。」說著他也拉著克拉克走了進去。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他靠到最邊邊，盡量避免和你們肢體接觸</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">在你們四人都進入電梯後，電梯無聲無息地關閉。
+然後，逐漸加速下降。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_3">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「我又沒有同意要進來!」他再度開始抗議</div>
+</div>
+</div></div><!--EOS--></div>
+</body>
+</html>

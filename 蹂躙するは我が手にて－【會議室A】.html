@@ -1,0 +1,272 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="og:title" content="【會議室A】">
+<meta property="og:description" content="">
+<title>【會議室A】</title>
+<style>
+h1{ color:white; margin: 5px 0; }
+body{ background:#454752; }
+._subtitle { color:#ddd; margin:5px 0 20px 0; }
+._sectTitle { background:#ddd; margin-top:30px; padding:10px;font-weight:bold;font-size:1.3rem;text-align:center; }
+._hidden { display:none; }
+.center { display:flex; flex-direction:column; align-items:center; }
+#_main { display:flex; flex-direction:column; align-items:end; }
+._script {width: 100%;}
+
+
+._halt { padding:30px 0; }
+._bgImg { text-align: center; }
+._bgImg img { max-width: 800px; }
+._talk { margin:5px 0; display:flex; border:1px solid black; background:#1e1e1e; color:#eee; width:100%; max-width:1080px; border-radius:5px; }
+._leftCol { width:122px; }
+._rightCol { width:calc(100% - 126px); }
+._actorName{ padding:5px 10px; height:20px; font-size:18px; }
+._actorImg { margin:6px; width:110px; height:110px; background-repeat:no-repeat; background-size:cover; background-color:#2a2a2a; }
+._actorWords { margin:5px; background:#2a2a2a; font-size:1.1rem; padding:10px; height:calc(100% - 60px); border-radius:5px; }
+._sectTitle { border-radius:5px; margin-bottom:5px; }
+
+@media only screen and (max-width: 400px) {
+._leftCol { width:100px; }
+._rightCol { width:calc(100% - 100px); }
+._actorImg { margin:35px 0 5px 10px; width: 85px; height: 85px; }
+}
+
+._talk.otherCh { width:calc(50%); text-align:right; margin-left:auto; }
+._talk.otherCh ._leftCol { display:none; }
+._talk.otherCh ._rightCol { width:100%; }
+._talk.otherCh ._actorWords { background:black;color:white; }
+
+._actor_0 ._actorName { color: #888888; }
+._actor_0 ._actorName::after { content:"KP"; }
+._actor_0 ._actorImg { background-image:url(https://images.plurk.com/3ZZx0oa12lNSjNDb6djmW9.png); } 
+._actor_1 ._actorName { color: #888888; }
+._actor_1 ._actorName::after { content:"路維希爾德．帕比斯"; }
+._actor_1 ._actorImg { background-image:url(https://images.plurk.com/6AzHNWf6XNz9k4BJ5ytswH.png); } 
+._actor_2 ._actorName { color: #888888; }
+._actor_2 ._actorName::after { content:"弗里德里希．馮．法爾肯海因"; }
+._actor_2 ._actorImg { background-image:url(https://images.plurk.com/52kzBePd0rADmpsdMIdRsK.png); } 
+._actor_3 ._actorName { color: #888888; }
+._actor_3 ._actorName::after { content:"艾吉爾．克拉克"; }
+._actor_3 ._actorImg { background-image:url(https://images.plurk.com/57jS0Zw9sdK3RXjV2q4XOf.jpg); } 
+._actor_4 ._actorName { color: #888888; }
+._actor_4 ._actorName::after { content:"菲卓．安德拉．泰克諾兹"; }
+._actor_4 ._actorImg { background-image:url(https://images.plurk.com/4iQkThvCeakGFboPidGIhC.png); } 
+._actor_5 ._actorName { color: #888888; }
+._actor_5 ._actorName::after { content:""; }
+._actor_5 ._actorImg { background-image:url(); } 
+._actor_6 ._actorName { color: #888888; }
+._actor_6 ._actorName::after { content:"弗里德里希．馮．法爾肯海因"; }
+._actor_6 ._actorImg { background-image:url(https://images.plurk.com/41y7tesleWWLdNEYWBOnBy.png); } 
+._actor_7 ._actorName { color: #888888; }
+._actor_7 ._actorName::after { content:"艾吉爾．克拉克"; }
+._actor_7 ._actorImg { background-image:url(https://images.plurk.com/2nX1Yxf43UpM0cRqK11Lcc.jpg); } 
+._actor_8 ._actorName { color: #888888; }
+._actor_8 ._actorName::after { content:"菲卓．安德拉．泰克諾兹"; }
+._actor_8 ._actorImg { background-image:url(https://images.plurk.com/21Wqh3Rfe8DsFJFdPVwxh4.png); } 
+._actor_9 ._actorName { color: #888888; }
+._actor_9 ._actorName::after { content:"10"; }
+._actor_9 ._actorImg { background-image:url(); } 
+._actor_10 ._actorName { color: #888888; }
+._actor_10 ._actorName::after { content:"11"; }
+._actor_10 ._actorImg { background-image:url(); } 
+._actor_11 ._actorName { color: #888888; }
+._actor_11 ._actorName::after { content:"12"; }
+._actor_11 ._actorImg { background-image:url(); } 
+._actor_12 ._actorName { color: #888888; }
+._actor_12 ._actorName::after { content:"13"; }
+._actor_12 ._actorImg { background-image:url(); } 
+._actor_13 ._actorName { color: #888888; }
+._actor_13 ._actorName::after { content:"14"; }
+._actor_13 ._actorImg { background-image:url(); } 
+._actor_14 ._actorName { color: #888888; }
+._actor_14 ._actorName::after { content:"15"; }
+._actor_14 ._actorImg { background-image:url(); } 
+._actor_15 ._actorName { color: #888888; }
+._actor_15 ._actorName::after { content:"16"; }
+._actor_15 ._actorImg { background-image:url(); } 
+._actor_16 ._actorName { color: #888888; }
+._actor_16 ._actorName::after { content:"17"; }
+._actor_16 ._actorImg { background-image:url(); } 
+._actor_17 ._actorName { color: #888888; }
+._actor_17 ._actorName::after { content:"18"; }
+._actor_17 ._actorImg { background-image:url(); } 
+._actor_18 ._actorName { color: #888888; }
+._actor_18 ._actorName::after { content:"19"; }
+._actor_18 ._actorImg { background-image:url(); } 
+._actor_19 ._actorName { color: #888888; }
+._actor_19 ._actorName::after { content:"20"; }
+._actor_19 ._actorImg { background-image:url(); } 
+</style>
+</head>
+<body class="center">
+<div class="_hidden">
+<version>hazmole_v1.0</version>
+</div>
+
+<h1>【會議室A】</h1>
+<div class="_subtitle"></div>
+
+<div id="_main"><div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">路維來到了會議室A，這裡是寬敞的房間，中央有一張長桌。<br>可能是在開會時匆忙離開的吧，文件和電腦丟在一邊，前方牆上的投影屏上顯示著半頁資料。<br><br> 【可以探索的地方】<br>〇資料及電腦 〇投影屏幕</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他坐在椅子上翻閱電腦的資料</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">〈圖書館〉</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「這看起來還有點人樣。」勉強去看一下電腦吧。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">你在電腦內找到戰後處理的資料。<br><br>《關於恆刻帝國的戰後處理》<br>雖然在本次世界大戰中，被恆刻帝國占領的土地在戰爭結束時得到了解放，但於戰爭初期投降的國家由於物資短缺導致的飢餓、疫病蔓延和勞動力短缺等問題，很難立即復興。<br>雖然目前首都被作為下一個執政黨的“叛軍”佔領，但由於沒有脫離被恐怖組織控制的範圍，戰後處理工作面臨困難。<br>預計國際聯盟將介入，並與國際社會合作處理戰後問題。<br><br>《關於索拉維亞的戰後處理》<br>侵犯了許多國際法，預計戰後處理工作將最為繁重。<br>審訊和調查表明，這次的重犯都是軍方失控。<br>國家元首發表聲明說“索拉維亞終於回歸了正確的面貌。雖然是軍方失控，但索拉維亞確實犯下了不可饒恕的罪行。我們將於履行戰爭責任的同時，與國際社會共同前進。”<br><br>《關於帕達國的戰後處理》<br>儘管存在各種指控，但沒有發現帕達國違反國際法的情況。<br>但是，帕達國確實應該對加劇本次大戰負責。<br>很多人希望採取適當措施，但更多的呼聲認為國土荒蕪嚴重，需要進行戰後復興。<br>國際聯盟也一致認為，應該首先進行援助。<br><br>《關於賽因斯與欽納什埃爾洛米聯合城的戰後處理》<br>儘管沒有直接干預本次世界大戰，但仍有許多違反國際武器公約、國際武器使用公約和其他條約的行為。<br>另外，在戰後處理中，由於賽欽城為武器出口為主的“特殊經濟”，很難支付賠償金，因此，賠償委員會主張制定臨時法，使戰爭賠償順利進行。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">看著自己國家的資訊，「……臨時法跟賠償有什麼關係？」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「叛軍啊……」聯想到老熟人了呢。<br>「意思是，原本的法律抓不到你的錯處，只好臨時修訂霸王條款罰你們」他笑著對你解釋</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「真是的，我們最值錢的東西猿人可一點都不懂。」他點了點自己的腦袋。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「那你猜沒錢的話，誰要打工還債吶？」<br>「沒錯唷，你們聰明的大腦就得替那些卷毛狒狒工作了」<br>轉頭看向投影幕</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">投影幕顯示著世界地圖。<br>在荒蕪的世界中，各國進行分割與整合的結果以領土線的形式表現出來。<br>你們的國家大部分已經被曾經統治過的鄰國合併了。 </div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他捧著臉了「哇，那可真是幸虧他們沒有長腦……^^」</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「真是的，少了我怎麼發展成這幅鳥樣」他搖搖頭<br>「估計你們家也是被抄的差不多了」<br>查看一下附近有沒有遺落的手機能用</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「果然，只有我才值得安樂死嗎？」他幸災樂過地笑著似乎還要工作的同胞。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">「陰謀論的話，他們估計只是想把武器掌握在自己手裡，國際盟啊……」搖頭</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">沒有呢，很可惜。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_1">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">起身走向隔壁</div>
+</div>
+</div></div><!--EOS--></div>
+</body>
+</html>

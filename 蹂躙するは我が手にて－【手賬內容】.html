@@ -1,0 +1,252 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="og:title" content="【手賬內容】">
+<meta property="og:description" content="">
+<title>【手賬內容】</title>
+<style>
+h1{ color:white; margin: 5px 0; }
+body{ background:#454752; }
+._subtitle { color:#ddd; margin:5px 0 20px 0; }
+._sectTitle { background:#ddd; margin-top:30px; padding:10px;font-weight:bold;font-size:1.3rem;text-align:center; }
+._hidden { display:none; }
+.center { display:flex; flex-direction:column; align-items:center; }
+#_main { display:flex; flex-direction:column; align-items:end; }
+._script {width: 100%;}
+
+
+._halt { padding:30px 0; }
+._bgImg { text-align: center; }
+._bgImg img { max-width: 800px; }
+._talk { margin:5px 0; display:flex; border:1px solid black; background:#1e1e1e; color:#eee; width:100%; max-width:1080px; border-radius:5px; }
+._leftCol { width:122px; }
+._rightCol { width:calc(100% - 126px); }
+._actorName{ padding:5px 10px; height:20px; font-size:18px; }
+._actorImg { margin:6px; width:110px; height:110px; background-repeat:no-repeat; background-size:cover; background-color:#2a2a2a; }
+._actorWords { margin:5px; background:#2a2a2a; font-size:1.1rem; padding:10px; height:calc(100% - 60px); border-radius:5px; }
+._sectTitle { border-radius:5px; margin-bottom:5px; }
+
+@media only screen and (max-width: 400px) {
+._leftCol { width:100px; }
+._rightCol { width:calc(100% - 100px); }
+._actorImg { margin:35px 0 5px 10px; width: 85px; height: 85px; }
+}
+
+._talk.otherCh { width:calc(50%); text-align:right; margin-left:auto; }
+._talk.otherCh ._leftCol { display:none; }
+._talk.otherCh ._rightCol { width:100%; }
+._talk.otherCh ._actorWords { background:black;color:white; }
+
+._actor_0 ._actorName { color: #888888; }
+._actor_0 ._actorName::after { content:"KP"; }
+._actor_0 ._actorImg { background-image:url(https://images.plurk.com/3ZZx0oa12lNSjNDb6djmW9.png); } 
+._actor_1 ._actorName { color: #888888; }
+._actor_1 ._actorName::after { content:"路維希爾德．帕比斯"; }
+._actor_1 ._actorImg { background-image:url(https://images.plurk.com/6AzHNWf6XNz9k4BJ5ytswH.png); } 
+._actor_2 ._actorName { color: #888888; }
+._actor_2 ._actorName::after { content:"弗里德里希．馮．法爾肯海因"; }
+._actor_2 ._actorImg { background-image:url(https://images.plurk.com/52kzBePd0rADmpsdMIdRsK.png); } 
+._actor_3 ._actorName { color: #888888; }
+._actor_3 ._actorName::after { content:"艾吉爾．克拉克"; }
+._actor_3 ._actorImg { background-image:url(https://images.plurk.com/57jS0Zw9sdK3RXjV2q4XOf.jpg); } 
+._actor_4 ._actorName { color: #888888; }
+._actor_4 ._actorName::after { content:"菲卓．安德拉．泰克諾兹"; }
+._actor_4 ._actorImg { background-image:url(https://images.plurk.com/4iQkThvCeakGFboPidGIhC.png); } 
+._actor_5 ._actorName { color: #888888; }
+._actor_5 ._actorName::after { content:""; }
+._actor_5 ._actorImg { background-image:url(); } 
+._actor_6 ._actorName { color: #888888; }
+._actor_6 ._actorName::after { content:"弗里德里希．馮．法爾肯海因"; }
+._actor_6 ._actorImg { background-image:url(https://images.plurk.com/41y7tesleWWLdNEYWBOnBy.png); } 
+._actor_7 ._actorName { color: #888888; }
+._actor_7 ._actorName::after { content:"艾吉爾．克拉克"; }
+._actor_7 ._actorImg { background-image:url(https://images.plurk.com/2nX1Yxf43UpM0cRqK11Lcc.jpg); } 
+._actor_8 ._actorName { color: #888888; }
+._actor_8 ._actorName::after { content:"菲卓．安德拉．泰克諾兹"; }
+._actor_8 ._actorImg { background-image:url(https://images.plurk.com/21Wqh3Rfe8DsFJFdPVwxh4.png); } 
+._actor_9 ._actorName { color: #888888; }
+._actor_9 ._actorName::after { content:"10"; }
+._actor_9 ._actorImg { background-image:url(); } 
+._actor_10 ._actorName { color: #888888; }
+._actor_10 ._actorName::after { content:"特里克夫．埃爾根（手賬）"; }
+._actor_10 ._actorImg { background-image:url(https://images.plurk.com/6xEIC0hCU9ygHMiFUEDrJi.png); } 
+._actor_11 ._actorName { color: #888888; }
+._actor_11 ._actorName::after { content:"12"; }
+._actor_11 ._actorImg { background-image:url(); } 
+._actor_12 ._actorName { color: #888888; }
+._actor_12 ._actorName::after { content:"13"; }
+._actor_12 ._actorImg { background-image:url(); } 
+._actor_13 ._actorName { color: #888888; }
+._actor_13 ._actorName::after { content:"14"; }
+._actor_13 ._actorImg { background-image:url(); } 
+._actor_14 ._actorName { color: #888888; }
+._actor_14 ._actorName::after { content:"15"; }
+._actor_14 ._actorImg { background-image:url(); } 
+._actor_15 ._actorName { color: #888888; }
+._actor_15 ._actorName::after { content:"16"; }
+._actor_15 ._actorImg { background-image:url(); } 
+._actor_16 ._actorName { color: #888888; }
+._actor_16 ._actorName::after { content:"17"; }
+._actor_16 ._actorImg { background-image:url(); } 
+._actor_17 ._actorName { color: #888888; }
+._actor_17 ._actorName::after { content:"18"; }
+._actor_17 ._actorImg { background-image:url(); } 
+._actor_18 ._actorName { color: #888888; }
+._actor_18 ._actorName::after { content:"19"; }
+._actor_18 ._actorImg { background-image:url(); } 
+._actor_19 ._actorName { color: #888888; }
+._actor_19 ._actorName::after { content:"20"; }
+._actor_19 ._actorImg { background-image:url(); } 
+</style>
+</head>
+<body class="center">
+<div class="_hidden">
+<version>hazmole_v1.0</version>
+</div>
+
+<h1>【手賬內容】</h1>
+<div class="_subtitle"></div>
+
+<div id="_main"><div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_10">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">銀色暮光教團最近越來越活躍了。<br>從一個朋友那打聽到消息。<br>好像是要召喚來自外星的神明。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">· · · · ·</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_10">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">很好奇所以查了一下。<br>神明的名字是克蘇魯。<br>這幾千年來，即使有了限定性的召喚，也未曾完全復活過。<br>因為這位神明沉睡在海底的城市裡，為了喚醒祂，必須在城市浮上波浪的時候打開巨大的黑色的門。<br>希望他也能查清楚再告訴我。<br>感覺白跑了一趟。<br>我不是為了得到這樣的知識才待在這個時代的啊。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">· · · · ·</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_10">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">原來如此，這很棘手啊。<br>“群星歸位之時”快到了。<br>正確地講，是五個月後。到那個時候神明就會復活。<br>無法阻止銀色暮光教團的暗中活動。<br>他們的手已經伸向全世界。<br>必須想個辦法對抗。<br>先結束這場戰爭吧。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">· · · · ·</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_10">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">戰爭結束了。<br>正如預期的那樣，戰爭結束後成功建立了國際組織。<br>與此同時，還計劃實施“朗基努斯之槍行動”。<br>還有三個月。能及時把它發展到可行階段嗎？</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">· · · · ·</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_10">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">天真! 太天真了！<br>人類不明白直面神明意味著什麼。<br>現在不是討論如何在神明離開後使用它的時候！<br>武器使用了賽欽城的技術。雖然尚未完成，但這已經有頭緒了。<br>軍事系統照現在的樣子是毀滅性的。沒有人能立於其上。<br>但是，現在有很多領導人戰死或入獄，在大混亂的情況下，有沒有人能推動多國軍隊行動呢？有必要尋找“擁有堅韌的精神的人”、“人類首屈一指的領袖”。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">· · · · ·</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_10">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">致親愛的死刑犯們：<br><br>死刑當天發生了這種事，一定很驚訝吧。<br>如果讀了我的日記，就能明白，我願意把人類的命運交給你們。<br>很抱歉冠以了作為副產物的“死刑犯”頭銜。<br>因為沒有比這更適合召集你們的東西了，所以我擅自這樣做了。<br>如果“朗基努斯之槍行動”成功，我保證會將你們從這個頭銜中解放出來。<br><br><br>路維希爾德．帕比斯。<br>我聽說過你。<br>發動戰爭的手段，真是很絕妙。<br>政治手腕和掌握人心的藝術、甚至驅使無辜的人也參與鬥爭，也想道了使用政治替身。<br>也許這正是人類對人類所產生的，最卓越的技能。<br>現在全世界都是你的敵人……這種程度的劣勢，對你來說是不夠的吧？<br>在國際聯盟體育場的演講台上，為你準備了一個專屬的舞台。<br>如只要打開兩台機器上的銀色開關，一萬台無人攝像機就會全世界的電視、廣播、網絡來發布你的演講。<br>咒文需要全世界人民的力量。<br>讓我看看你的本領。<br><br>弗里德里希．馮．法爾肯海因。<br>已經踏足23個戰場、僅官方記錄就殺死了500萬人……真是令人吃驚。<br>同一個種族之間可以殺害這麼多同胞，真是太精彩了。<br>我覺得我根本做不到。<br>也許正是因為你們擁有多種生命形式，才能做到這一點吧。<br>那份豪傑與堅韌，請在這次行動中盡情發揮吧。<br>國際聯盟有來自各國的、訓練度和指揮統制都很低的海陸空軍，齊聚在一起。<br>畢竟3個月內就沒法進行更多的準備工作就投入使用了。這一點很抱歉。<br>只有兵器是一級品。<br>你去拍拍他們的屁股吧。<br>對於從無數地獄被稱為的戰場上飛奔而來的你來說，這就像擰斷一個嬰兒的手一樣簡單吧？<br>軍事基地準備了很多揚聲器，這樣你的聲音就能很好地傳達出來。<br>放著手記的桌子上的擴音器可以聯動，不介意的話請使用。<br><br>艾吉爾．克拉克。<br>你給我帶來了最大的麻煩。<br>這是我能送出的最大讚美。<br>如果不是因為你，我可以更從容地處理這件事吧。<br>永遠不會忘記花在你身上的三天。<br>——話說回來，這次的作戰雖然是我的提案，但是除了框架以外，其他的全部都交給了國際聯盟的人。<br>粗枝大葉，幾乎沒辦法順利進行吧。<br>可以預料到在國際聯盟和總參謀部的他們處境會很艱難。<br>拜託了他們去製定、部署和執行新的軍事行動。<br>已經在3樓52號室“大本營”安排了最高級的無線電設備，可以連接本次行動的所有信息、最大數量工作人員、所有設施和軍事人員。<br>盡情利用吧。<br><br>菲卓．安德拉．泰克諾兹。<br>使本次大戰成為人類歷史上最惡事件的武器製造技術，令人欽佩。<br>雖然遠不及我們的技術，但是你的智慧和知識已經推動了人類幾十年的發展。<br>因為很早就注意到你的技術能力，所以國際聯盟的所有武器都使用了你的技術。<br>只是，好像有無論如何都無法順利運轉的部分呢。<br>不幸的是，我對以殺傷為目的的武器並不了解，每天哭訴般送達的報告書也是束手無策。<br>現在軍事實驗室裡，面對你留下的研究，那些迷茫的研究人員一定很傷腦筋。<br>我從賽欽城沒收的你的機械全部連接到軍事實驗室的“中心區”了。<br>希望能自由使用。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">· · · · ·</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_10">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">在手賬的最後記下了《朗基努斯之槍行動》的細節。<br>好好讀一讀吧。<br><br>是的，將各位邀請到國際聯盟總部時沒收的私人物品放在房間後面的保險箱裡。<br>密碼是“1911rsakkmi”，隨意使用。<br>電梯設定為第二次乘坐時到達地面一層。<br>準備好了就上去吧。<br><br>出去之後就是國際聯盟總部地上一樓最裡面。<br>穿過入口大廳就到外面了。<br>我修整的這個基地相當大，請不要迷路。<br><br>之後的就拜託了。<br>我很期待，人類的諸位。<br><br><br><br>特里克夫· 埃爾根</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">面向PL的《朗基努斯之槍行動》說明<br><br>【朗基努斯之槍行動】<br>①HO4 &lt;製作作成類技能&gt;<br>②HO3 &lt;作戰類技能&gt;<br>③HO2 &lt;武器操縱系統技能&gt;<br>④HO1 &lt;演說類技能&gt;<br>按順序進行檢定，每次成功，【咒文：不完全克蘇魯的退散術】的成功率增加25%（上限99%）。<br>※大成功+10%，大失敗-10%<br>※《朗基努斯之槍行動》中一律不可重骰<br>代表者進行&lt;1d100&gt;檢定，詠唱【咒文：不完全克蘇魯的退散術】，如果成功就能退散克蘇魯。</div>
+</div>
+</div></div><!--EOS--></div>
+</body>
+</html>

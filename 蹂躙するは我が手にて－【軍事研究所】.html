@@ -1,0 +1,274 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="og:title" content="【軍事研究所】">
+<meta property="og:description" content="">
+<title>【軍事研究所】</title>
+<style>
+h1{ color:white; margin: 5px 0; }
+body{ background:#454752; }
+._subtitle { color:#ddd; margin:5px 0 20px 0; }
+._sectTitle { background:#ddd; margin-top:30px; padding:10px;font-weight:bold;font-size:1.3rem;text-align:center; }
+._hidden { display:none; }
+.center { display:flex; flex-direction:column; align-items:center; }
+#_main { display:flex; flex-direction:column; align-items:end; }
+._script {width: 100%;}
+
+
+._halt { padding:30px 0; }
+._bgImg { text-align: center; }
+._bgImg img { max-width: 800px; }
+._talk { margin:5px 0; display:flex; border:1px solid black; background:#1e1e1e; color:#eee; width:100%; max-width:1080px; border-radius:5px; }
+._leftCol { width:122px; }
+._rightCol { width:calc(100% - 126px); }
+._actorName{ padding:5px 10px; height:20px; font-size:18px; }
+._actorImg { margin:6px; width:110px; height:110px; background-repeat:no-repeat; background-size:cover; background-color:#2a2a2a; }
+._actorWords { margin:5px; background:#2a2a2a; font-size:1.1rem; padding:10px; height:calc(100% - 60px); border-radius:5px; }
+._sectTitle { border-radius:5px; margin-bottom:5px; }
+
+@media only screen and (max-width: 400px) {
+._leftCol { width:100px; }
+._rightCol { width:calc(100% - 100px); }
+._actorImg { margin:35px 0 5px 10px; width: 85px; height: 85px; }
+}
+
+._talk.otherCh { width:calc(50%); text-align:right; margin-left:auto; }
+._talk.otherCh ._leftCol { display:none; }
+._talk.otherCh ._rightCol { width:100%; }
+._talk.otherCh ._actorWords { background:black;color:white; }
+
+._actor_0 ._actorName { color: #888888; }
+._actor_0 ._actorName::after { content:"KP"; }
+._actor_0 ._actorImg { background-image:url(https://images.plurk.com/3ZZx0oa12lNSjNDb6djmW9.png); } 
+._actor_1 ._actorName { color: #888888; }
+._actor_1 ._actorName::after { content:"路維希爾德．帕比斯"; }
+._actor_1 ._actorImg { background-image:url(https://images.plurk.com/6AzHNWf6XNz9k4BJ5ytswH.png); } 
+._actor_2 ._actorName { color: #888888; }
+._actor_2 ._actorName::after { content:"弗里德里希．馮．法爾肯海因"; }
+._actor_2 ._actorImg { background-image:url(https://images.plurk.com/52kzBePd0rADmpsdMIdRsK.png); } 
+._actor_3 ._actorName { color: #888888; }
+._actor_3 ._actorName::after { content:"艾吉爾．克拉克"; }
+._actor_3 ._actorImg { background-image:url(https://images.plurk.com/57jS0Zw9sdK3RXjV2q4XOf.jpg); } 
+._actor_4 ._actorName { color: #888888; }
+._actor_4 ._actorName::after { content:"菲卓．安德拉．泰克諾兹"; }
+._actor_4 ._actorImg { background-image:url(https://images.plurk.com/4iQkThvCeakGFboPidGIhC.png); } 
+._actor_5 ._actorName { color: #888888; }
+._actor_5 ._actorName::after { content:""; }
+._actor_5 ._actorImg { background-image:url(); } 
+._actor_6 ._actorName { color: #888888; }
+._actor_6 ._actorName::after { content:"弗里德里希．馮．法爾肯海因"; }
+._actor_6 ._actorImg { background-image:url(https://images.plurk.com/41y7tesleWWLdNEYWBOnBy.png); } 
+._actor_7 ._actorName { color: #888888; }
+._actor_7 ._actorName::after { content:"艾吉爾．克拉克"; }
+._actor_7 ._actorImg { background-image:url(https://images.plurk.com/2nX1Yxf43UpM0cRqK11Lcc.jpg); } 
+._actor_8 ._actorName { color: #888888; }
+._actor_8 ._actorName::after { content:"菲卓．安德拉．泰克諾兹"; }
+._actor_8 ._actorImg { background-image:url(https://images.plurk.com/21Wqh3Rfe8DsFJFdPVwxh4.png); } 
+._actor_9 ._actorName { color: #888888; }
+._actor_9 ._actorName::after { content:"10"; }
+._actor_9 ._actorImg { background-image:url(); } 
+._actor_10 ._actorName { color: #888888; }
+._actor_10 ._actorName::after { content:"特里克夫．埃爾根（手賬）"; }
+._actor_10 ._actorImg { background-image:url(https://images.plurk.com/6xEIC0hCU9ygHMiFUEDrJi.png); } 
+._actor_11 ._actorName { color: #888888; }
+._actor_11 ._actorName::after { content:"菲利克斯．阿德里安．摩根施特恩"; }
+._actor_11 ._actorImg { background-image:url(https://images.plurk.com/5Y2B61FctMhA4yOwjwmQFu.png); } 
+._actor_12 ._actorName { color: #888888; }
+._actor_12 ._actorName::after { content:"13"; }
+._actor_12 ._actorImg { background-image:url(); } 
+._actor_13 ._actorName { color: #888888; }
+._actor_13 ._actorName::after { content:"14"; }
+._actor_13 ._actorImg { background-image:url(); } 
+._actor_14 ._actorName { color: #888888; }
+._actor_14 ._actorName::after { content:"15"; }
+._actor_14 ._actorImg { background-image:url(); } 
+._actor_15 ._actorName { color: #888888; }
+._actor_15 ._actorName::after { content:"16"; }
+._actor_15 ._actorImg { background-image:url(); } 
+._actor_16 ._actorName { color: #888888; }
+._actor_16 ._actorName::after { content:"17"; }
+._actor_16 ._actorImg { background-image:url(); } 
+._actor_17 ._actorName { color: #888888; }
+._actor_17 ._actorName::after { content:"18"; }
+._actor_17 ._actorImg { background-image:url(); } 
+._actor_18 ._actorName { color: #888888; }
+._actor_18 ._actorName::after { content:"19"; }
+._actor_18 ._actorImg { background-image:url(); } 
+._actor_19 ._actorName { color: #888888; }
+._actor_19 ._actorName::after { content:"20"; }
+._actor_19 ._actorImg { background-image:url(); } 
+</style>
+</head>
+<body class="center">
+<div class="_hidden">
+<version>hazmole_v1.0</version>
+</div>
+
+<h1>【軍事研究所】</h1>
+<div class="_subtitle"></div>
+
+<div id="_main"><div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">〇軍事研究所</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">你被帶路的人員帶到此處，踏入國際聯盟軍事研究所的核心部門。<br>在那裡，許多研究人員咬著電腦，在機器前進退兩難。盯著設計圖，雙手著抱頭，對著像鬧鐘一樣響起的錯誤警告發出悲鳴。<br><br>“不行，還是不起作用！”<br>“要破解賽欽語代碼還需要兩個月！”<br>“兩個月之後就太晚了！不管怎麼樣只能繼續了！”<br><br>他們面前的是你被捕之前一直在開發的新型武器。<br>從監視器來看，似乎安裝在了國際盟軍的所有軍事武器上，但是運行的關鍵程序似乎不起作用。<br><br>〈製作（武器）／製作（製圖）〉或相應技能。<br>一定程度的RP可以獲得技能加值</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">拋開這些煩人的想法，他先坐在椅子鬆一口氣「哈，」他閉著眼回想著國家的規條。<br>他半瞇著眼，看著那些忙前忙後的實驗人員。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">一些研究員跑來跑去，一個跑去看這邊的問題，一個跑去解碼。<br>手忙腳亂的。<br><br>用著你最看不懂的最慢的方式進行。<br>毫無章法。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">看著這些白痴一般的人走來走去，他心情肉眼可見地變好。<br><br>果然這個世界上最大的娛樂都是看這些人的笑話。<br>畢竟賽欽人不喜歡跟白痴交流，他剛才在一旁的電腦查看著他們的進度。 <br></div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">注意到你的出現，許多研究人員大喊起來，他們知道你的名諱，知道你是誰，他們開始聚集過來幫助你。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他頭痛被扶著頭，「你們別來添亂，就已經是對我最大的幫忙。」差不多是下了逐客令 
+</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">你讓研究員們不要來搗亂，他們聽話的退後，不再擾亂你。 
+</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">他站起身，逐一檢查那群人到底動了他武器哪裏。他把被人動過的地方記下，腦袋快速運轉，思考著要怎麼從這個缺口直接進展到下一個進度。<br><br>在腦中大概規劃好修改後的設計圖以後，就拿起熟悉的工具開始動工。這個武器原本就是參考了他之前製作過得幾個武器組合並改良，除此以外他還有幾個新想到的功能想加上去。他原本已經組合好這個武器的基底，只是武器上有幾個被那些不知情的實驗人員動到的地方。大概修改了那幾個部分以後，他就開始往武器上添加新功能。<br><br>這麼說起來，他在監獄中無所事事的時候，也有在回想起他的武器，百無聊賴之下還有多了幾個靈感。他按照腦中的想法一一組合。<br><br>在武器完成90趴的時候，他開始了武器測試。先是利用普通的研究物品進行基礎測試，稍作調整以後，就開始測試武器在不同環境下的作用。果然在這次測試以後還有幾個讓他不滿的地方，他又回到研究桌上重新修改，然後再重複一遍剛才的測試，一次又一次把武器的威力進步提升。在這步底下他終於揚起久會的笑容。差不多完成以後就開始組裝武器的外觀。<br><br>他看向旁邊的設計圖，他的設計圖一般都是簡單地寫了幾個關鍵點，好讓組內的下屬傳遞。因為大部分對他們來說都是基礎知識，他們也製造過不少武器了，所以很多重複經常會用到的部分不會特別記錄下來。他一一檢查確定自己的之前的各種構思在武器上沒有遺漏以後，就拿起幾張設計圖開始製作外觀。對，他們的設計圖做了核心設計以外，還有一般會設計好幾張外觀參考。他把外觀一一組合並確定其沒有影響武器功能以後，終於可以拿去當最終測試。<br><br>他跑去找負責人申請幾個人類來當武器威力的測試，結果被拒絕，他嘖了一聲，不爽地看著這些人。媽的，現在有求於他連這點要求都不行。但已經回復一般禮貌的他只是滿面不爽地離開。<br><br>他找了幾個替代品，然後完成了最終測試。開始大量生產，這基本就是按照之前步驟機械性地重複而已，但畢竟他一人作業，能製作的數量有限。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">隨機 十 百 千 萬</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">隨機 [ 十 百 千 萬 ] <br>→ 千</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">最終他製作了幾千把高威力的精銳武器。</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">請投擲判定，成功率+15%</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">cc 95 製作（武器）</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_4">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">1D100 ≦ 95　<br>72 → 通常成功：製作（武器）</div>
+</div>
+</div></div><!--EOS-->
+<div class="_script" data-type="talk">
+<div class="_talk mainCh _actor_0">
+<div class="_leftCol">
+<div class="_actorImg "></div>
+</div>
+<div class="_rightCol">
+<div class="_actorName"></div>
+<div class="_actorWords">判定成功，【咒文：不完全克蘇魯的退散術】的成功率增加25%</div>
+</div>
+</div></div><!--EOS--></div>
+</body>
+</html>
